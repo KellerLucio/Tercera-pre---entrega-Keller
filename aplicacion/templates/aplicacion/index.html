@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0022)http://localhost:8000/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head>
+  {% load static %}
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     
     
@@ -15,7 +17,7 @@
     
 
     <!-- Bootstrap core CSS -->
-<link href="./curso_coder_house_files/bootstrap.min.css" rel="stylesheet">
+<link href="./aplicacion/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -44,7 +46,7 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="./curso_coder_house_files/carousel.css" rel="stylesheet">
+    <link href="{% static 'aplicacion/css/carousel.css' %}" rel="stylesheet">
   </head>
   <body>
     
@@ -198,7 +200,7 @@
 </main>
 
 
-    <script src="./curso_coder_house_files/bootstrap.bundle.min.js"></script>
+    <script src="{static 'aplicacion/js/bootstrap.bundle.min.js' %}"></script>
 
       
   
