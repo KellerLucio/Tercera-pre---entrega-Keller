@@ -1,8 +1,14 @@
 {% extends 'aplicacion/base.html' %}
 
-{% block titulo %} Listado de personas {% end block %}
+{% block titulo %} Listado de personas {% endblock %}
 
 {% block listado %}
+
+<form action="{% url 'personas-create' %}" method="POST">
+	{{form.as_p}}
+	<input type="submit" value= "Agregar">
+</form>
+
 <ul>
 
 	{% for i in Persona %}
@@ -11,5 +17,3 @@
 
 </ul>
 {% endblock %}
-
-{% blcok title %} Total: {{total_personas}} {% endblock %}
