@@ -1,7 +1,6 @@
 from django.contrib import admin
 from django.urls import path
 from aplicacion.views import index
-
 from aplicacion.views import mostrar_tarea, mostrar_persona, mostrar_gato
 from aplicacion.views import crear_tarea, crear_persona, crear_gato
 from aplicacion.views import BuscarTareas, BuscarPersonas, BuscarGatos
